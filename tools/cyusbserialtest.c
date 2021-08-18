@@ -98,6 +98,8 @@ int main (int argc, char **agrv)
     int userInput;
     int tempSelectedDeviceNum, tempSelectedInterfaceNum, tempPageAddress, tempLength;
     CY_RETURN_STATUS rStatus;
+    (void) argc;
+    (void) agrv;
     signal (SIGUSR1, deviceHotPlug);
     glDevice = (CY_DEVICE_STRUCT *)malloc (CY_MAX_DEVICES *sizeof (CY_DEVICE_STRUCT));
     if (glDevice == NULL){

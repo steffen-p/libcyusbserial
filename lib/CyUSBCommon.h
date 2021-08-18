@@ -35,7 +35,7 @@
 #include <fcntl.h>
 #include <stdbool.h>
 #include <pthread.h>
-#include <libusb.h>
+#include <libusb/libusb.h>
 #include "CyUSBSerial.h"
 
 typedef struct CY_DEVICE {

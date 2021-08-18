@@ -630,6 +630,8 @@ CY_RETURN_STATUS CyGetLibraryVersion (
         PCY_LIBRARY_VERSION version
         )
 {
+    (void) handle;
+
     version->majorVersion = CY_US_VERSION_MAJOR;
     version->minorVersion = CY_US_VERSION_MINOR;
     version->patch = CY_US_VERSION_PATCH;
